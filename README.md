@@ -13,7 +13,7 @@
 1.使用SpringCloudEureka作为注册中心，实现服务治理<br> 
 2.使用Zuul网关框架统一管理微服务请求入口<br> 
 3.使用Ribbon实现本地负载均衡器和FeginHttp客户端调用工具<br> 
-4.使用Hystrix服务保护框架(服务降级、隔离、熔断、限流)<br> <br> 
+4.使用Hystrix服务保护框架(服务降级、隔离、熔断、限流)<br> 
 5.使用消息总线Stream RabbitMQ和Kafka<br> 
 6.微服务API接口安全控制与单点登陆系统CAS+JWT+Oauth2.0<br> 
 ## B. 分布式基础设施环境构建
