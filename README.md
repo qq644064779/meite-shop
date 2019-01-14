@@ -72,7 +72,7 @@
 -----meite-shop-service-order订单服务接口实现<br> 
 -----meite-shop-service-api-spike 秒杀服务接口<br> 、
 
-### C. 公共服务接口实体类
+### D. 公共服务接口实体类
 ---meite-shop-api-entitys-api 开放接口实体类层<br> 
 -----meite-shop-service-api-weixin-api 微信实体类<br> 
 -----meite-shop-service-api-member-api 会员实体类<br> 
@@ -82,4 +82,27 @@
 -----meite-shop-service-api-pay-api 聚合支付实体类<br> 
 -----meite-shop-service-api-order-api 订单实体类<br> 
 -----meite-shop-service-api-spike-api  秒杀实体类<br> 
+### E. 门户平台
+---meite-shop-portal 门户平台<br> 
+-----meite-shop-portal-web 门户网站 <br> 
+-----meite-shop-portal-sso 单点登陆系统 <br> 
+-----meite-shop-portal-search 搜索系统<br> 
+-----meite-shop-portal-spike 秒杀系统<br> 
+-----meite-shop-portal-cms 运营系统 <br> 
+
+### F. 工具类
+
+---meite-shop-common 工具类<br> 
+-----meite-shop-common-core—核心工具类<br> 
+
+### G. 分布式任务调度实现
+
+---meite-shop-service-job 分布式定时任务调度<br> 
+-----meite-shop-service-weixin-job 微信定时任务<br>
+-----meite-shop-service-member-job 会员定时任务<br> 
+-----meite-shop-service-tem-job 商品定时任务<br> 
+-----meite-shop-service-search-job 搜索定时任务<br> 
+-----meite-shop-service-order-job 订单定时任务<br> 
+-----meite-shop-service-api-spike-job 秒杀定时任务<br> 
+
 
