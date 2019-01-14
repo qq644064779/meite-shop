@@ -176,16 +176,16 @@ apollo.bootstrap.namespaces = application,mayikt.weixin
 
 # 学员练习常见问题
 
-## 1.下载微服务电商项目依赖SpringCloudJar包，Jar包明明真实存在，却启动报错找不到该类
+### 1.下载微服务电商项目依赖SpringCloudJar包，Jar包明明真实存在，却启动报错找不到该类
 解决办法：首先MavenUpdate，如果还不行，就开始清空Maven仓库，重新下载Jar包即可。<br> 
 
-## 2.将本地Jar包打包到Maven私服仓库中，无法上传本地Jar包。
+### 2.将本地Jar包打包到Maven私服仓库中，无法上传本地Jar包。
 解决办法：maven工程的version版本必须是 RELEASE版本<br> 
 具体说明：将改成0.0.1-SNAPSHOT改成 0.0.1-RELEASE重新上传即可<br> 
 
-## 3.将本地Jar包打包到Maven私服仓库中，上传Jar包报错401
+### 3.将本地Jar包打包到Maven私服仓库中，上传Jar包报错401
 解决办法：401说明权限不足，检查配置的账号权限策略<br> 
 
-## 4.外网服务器构建阿波罗分布式配置中心，注册中心的地址是内网IP，导致无法和客户端通讯
+### 4.外网服务器构建阿波罗分布式配置中心，注册中心的地址是内网IP，导致无法和客户端通讯
 解决办法:在Demo.sh文件中，修改注册IP为内网IP即可。<br> 
 
