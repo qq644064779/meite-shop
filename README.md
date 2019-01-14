@@ -35,6 +35,9 @@
 6.使用七牛云服务器对静态资源实现加速<br> 
 7.构建企业级Maven私服<br> 
 
+# 系统架构
+
+
 # 项目构建
 
 meite-shop-parent-----公共Pranet接口<br> 
@@ -96,5 +99,5 @@ meite-shop-parent-----公共Pranet接口<br>
 --------meite-shop-service-pay-job 聚合支付平台定时任务<br> 
 --------meite-shop-service-order-job 订单定时任务<br> 
 --------meite-shop-service-api-spike-job 秒杀定时任务<br> 
-# 环境要求
-该项目因为是一套比较真实微服务电商项目，项目在启动的时候会设计到很多分布式基础设施服务，所以本地开发者学习开发
+
+
