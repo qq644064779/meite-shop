@@ -40,65 +40,17 @@
 
 
 # 项目构建
+## A. 分布式基础设施项目
 
-meite-shop-parent-----公共Pranet接口<br> 
-  meite-shop-basics----分布式基础设施<br> 
-     meite-shop-basics-springcloud-eureka—注册中心<br> 
-     meite-shop-basics-apollo-config-server—阿波罗分布式配置中心<br> 
-     meite-shop-basics-springcloud-zuul—统一请求入口<br> 
-     meite-shop-basics-xuxueli-xxljob—分布式任务调度平台<br> 
-     meite-shop-basics-codingapi-lcn—分布式事务解决框架<br> 
-     meite-shop-basics-codingapi-zipKin  —分布式调用链系统<br> 
-     meite-shop-basics-codingapi-elk  —分布式日志收集<br> 
 
------meite-shop-service-api提供公共接口<br> 
-----------meite-shop-service-api-weixin 微信服务接口<br> 
-----------meite-shop-service-api-member会员服务接口<br> 
-----------meite-shop-service-api-sso  sso服务接口<br> 
-----------meite-shop-service-api-item商品服务接口<br> 
-----------meite-shop-service-api-search 搜索服务接口<br> 
-----------meite-shop-service-api-pay聚合支付平台<br> 
-----------meite-shop-service-api-order订单服务接口<br> 
-----------meite-shop-service-api-spike 秒杀服务接口<br> 
-
------meite-shop-service-impl公共接口的实现<br> 
-----------meite-shop-service-weixin 微信服务接口实现<br> 
-----------meite-shop-service-member会员服务接口实现<br> 
-----------meite-shop-service-api-sso  sso服务接口实现<br> 
-----------meite-shop-service-tem商品服务接口实现<br> 
-----------meite-shop-service-search 搜索服务接口实现<br> 
-----------meite-shop-service-pay聚合支付平台接口实现<br> 
----------- meite-shop-service-order订单服务接口实现<br> 
-----------meite-shop-service-api-spike 秒杀服务接口<br> 
-
------meite-shop-common 工具类<br> 
----------meite-shop-common-core—核心工具类<br> 
-
------meite-shop-portal 门户平台<br> 
----------meite-shop-portal-web 门户网站 <br> 
----------meite-shop-portal-sso 单点登陆系统 <br> 
----------meite-shop-portal-search 搜索系统<br> 
----------meite-shop-portal-spike 秒杀系统<br> 
----------meite-shop-portal-cms 运营系统 <br> 
-
------meite-shop-api-entitys-api 开放接口实体类层<br> 
----------meite-shop-service-api-weixin-api 微信接口实体类<br> 
----------meite-shop-service-api-member-api 会员接口实体类<br> 
----------meite-shop-service-api-sso-api  sso接口实体类<br> 
----------meite-shop-service-api-item-api 商品接口实体类<br> 
----------meite-shop-service-api-search-api 搜索接口实体类<br> 
----------meite-shop-service-api-pay-api 聚合支付平台实体类<br> 
----------meite-shop-service-api-order-api 订单服务接口实体类<br> 
----------meite-shop-service-api-spike-api  秒杀服务接口实体类<br> 
-
------meite-shop-service-job 分布式定时任务调度<br> 
---------meite-shop-service-weixin-job 微信定时任务<br>
---------meite-shop-service-member-job 会员定时任务<br> 
---------meite-shop-service-api-sso-job  sso服务定时任务<br> 
---------meite-shop-service-tem-job 商品定时任务<br> 
---------meite-shop-service-search-job 搜索定时任务<br> 
---------meite-shop-service-pay-job 聚合支付平台定时任务<br> 
---------meite-shop-service-order-job 订单定时任务<br> 
---------meite-shop-service-api-spike-job 秒杀定时任务<br> 
+---meite-shop-parent-----公共Pranet接口<br> 
+ ----meite-shop-basics----分布式基础设施<br> 
+ -----meite-shop-basics-springcloud-eureka—注册中心<br> 
+ -----meite-shop-basics-apollo-config-server—阿波罗分布式配置中心<br> 
+ ----meite-shop-basics-springcloud-zuul—统一请求入口<br> 
+ ---meite-shop-basics-xuxueli-xxljob—分布式任务调度平台<br> 
+ ---meite-shop-basics-codingapi-lcn—分布式事务解决框架<br> 
+ ---meite-shop-basics-codingapi-zipKin  —分布式调用链系统<br> 
+ ---meite-shop-basics-codingapi-elk  —分布式日志收集<br> 
 
 
