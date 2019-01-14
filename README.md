@@ -144,3 +144,18 @@
 最终以实际课程表格为准。<br> 
 
 # 项目启动说明
+## 分布式基础设施环境搭建
+### 分布式阿波罗配环境搭建
+ 使用阿波罗统一管理微服务配置文件，每个服务对应阿波罗一个appid，阿波罗中的appid和微服务项目的spring.application.name保持一致。
+ 阿波罗环境搭建搭建
+ ```
+1.	下载aploll配置中心 https://github.com/nobodyiam/apollo-build-scripts 
+2.	上传apollo-build-scripts-master文件到服务器中
+3. 创建阿波罗需要的数据库apolloConfigDb和apolloPortalDb
+3.	 unzip apollo-build-scripts-master.zip 解压配置文件
+如果没有unzip命令的话，安装zip插件 yum -y install zip unzip
+4.	配置数据策略
+修改demo.sh中的数据库账号和密码
+5.	启动阿波罗 ./demo.sh start 
+ ```
+
