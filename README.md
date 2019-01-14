@@ -48,48 +48,48 @@ meite-shop-parent-----公共Pranet接口<br>
 ---------meite-shop-basics-codingapi-elk  —分布式日志收集<br> 
 
 -----meite-shop-service-api提供公共接口<br> 
------------- meite-shop-service-api-weixin 微信服务接口<br> 
------------- meite-shop-service-api-member会员服务接口<br> 
------------- meite-shop-service-api-sso  sso服务接口<br> 
------------- meite-shop-service-api-item商品服务接口<br> 
------------- meite-shop-service-api-search 搜索服务接口<br> 
------------- meite-shop-service-api-pay聚合支付平台<br> 
------------- meite-shop-service-api-order订单服务接口<br> 
------------- meite-shop-service-api-spike 秒杀服务接口<br> 
+----------meite-shop-service-api-weixin 微信服务接口<br> 
+----------meite-shop-service-api-member会员服务接口<br> 
+----------meite-shop-service-api-sso  sso服务接口<br> 
+----------meite-shop-service-api-item商品服务接口<br> 
+----------meite-shop-service-api-search 搜索服务接口<br> 
+----------meite-shop-service-api-pay聚合支付平台<br> 
+----------meite-shop-service-api-order订单服务接口<br> 
+----------meite-shop-service-api-spike 秒杀服务接口<br> 
 
 服务接口中包含内存内容: 实体类层、接口层 <br> 
 -----meite-shop-service-impl公共接口的实现<br> 
------------- meite-shop-service-weixin 微信服务接口实现<br> 
------------- meite-shop-service-member会员服务接口实现<br> 
------------- meite-shop-service-api-sso  sso服务接口实现<br> 
------------- meite-shop-service-tem商品服务接口实现<br> 
------------- meite-shop-service-search 搜索服务接口实现<br> 
------------- meite-shop-service-pay聚合支付平台接口实现<br> 
------------- meite-shop-service-order订单服务接口实现<br> 
------------- meite-shop-service-api-spike 秒杀服务接口<br> 
+----------meite-shop-service-weixin 微信服务接口实现<br> 
+----------meite-shop-service-member会员服务接口实现<br> 
+----------meite-shop-service-api-sso  sso服务接口实现<br> 
+----------meite-shop-service-tem商品服务接口实现<br> 
+----------meite-shop-service-search 搜索服务接口实现<br> 
+----------meite-shop-service-pay聚合支付平台接口实现<br> 
+---------- meite-shop-service-order订单服务接口实现<br> 
+----------meite-shop-service-api-spike 秒杀服务接口<br> 
 
 -----meite-shop-common 工具类<br> 
 ---------meite-shop-common-core—核心工具类<br> 
 
 -----meite-shop-portal 门户平台<br> 
---------meite-shop-portal-web 门户网站 <br> 
---------meite-shop-portal-sso 单点登陆系统 <br> 
---------meite-shop-portal-search 搜索系统<br> 
---------meite-shop-portal-spike 秒杀系统<br> 
---------meite-shop-portal-cms 运营系统 <br> 
+---------meite-shop-portal-web 门户网站 <br> 
+---------meite-shop-portal-sso 单点登陆系统 <br> 
+---------meite-shop-portal-search 搜索系统<br> 
+---------meite-shop-portal-spike 秒杀系统<br> 
+---------meite-shop-portal-cms 运营系统 <br> 
 
 -----meite-shop-api-entitys-api 开放接口实体类层<br> 
------------- meite-shop-service-api-weixin-api 微信服务接口<br> 
------------- meite-shop-service-api-member-api 会员服务接口<br> 
------------- meite-shop-service-api-sso-api  sso服务接口<br> 
------------- meite-shop-service-api-item-api 商品服务接口<br> 
------------- meite-shop-service-api-search-api 搜索服务接口<br> 
------------- meite-shop-service-api-pay-api 聚合支付平台<br> 
------------- meite-shop-service-api-order-api 订单服务接口<br> 
------------- meite-shop-service-api-spike-api  秒杀服务接口<br> 
+---------meite-shop-service-api-weixin-api 微信服务接口<br> 
+---------meite-shop-service-api-member-api 会员服务接口<br> 
+---------meite-shop-service-api-sso-api  sso服务接口<br> 
+---------meite-shop-service-api-item-api 商品服务接口<br> 
+---------meite-shop-service-api-search-api 搜索服务接口<br> 
+---------meite-shop-service-api-pay-api 聚合支付平台<br> 
+---------meite-shop-service-api-order-api 订单服务接口<br> 
+---------meite-shop-service-api-spike-api  秒杀服务接口<br> 
 
 -----meite-shop-service-job 分布式定时任务调度<br> 
---------meite-shop-service-weixin-job 微信服务接口实现J
+--------meite-shop-service-weixin-job 微信服务接口实现<br>
 --------meite-shop-service-member-job 会员服务接口实现<br> 
 --------meite-shop-service-api-sso-job  sso服务接口实现<br> 
 --------meite-shop-service-tem-job 商品服务接口实现<br> 
