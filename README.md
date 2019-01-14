@@ -38,7 +38,7 @@
 
 # 系统架构
 
-<div align=center><img width="150" height="150" src="https://github.com/qq644064779/meite-shop/blob/master/%E6%AF%8F%E7%89%B9%E6%95%99%E8%82%B2.jpg"/></div>
+<div align=center><img  src="https://github.com/qq644064779/meite-shop/blob/master/%E6%AF%8F%E7%89%B9%E6%95%99%E8%82%B2.jpg"/></div>
 
 # 项目构建
 #### A. 分布式基础设施项目
