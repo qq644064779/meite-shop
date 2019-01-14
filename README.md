@@ -35,7 +35,67 @@
 6.使用七牛云服务器对静态资源实现加速<br> 
 7.构建企业级Maven私服<br> 
 
+# 项目构建
 
+meite-shop-parent-----公共Pranet接口<br> 
+-----meite-shop-basics----分布式基础设施<br> 
+---------meite-shop-basics-springcloud-eureka—注册中心 8080<br> 
+---------meite-shop-basics-apollo-config-server—阿波罗分布式配置中心<br> 
+---------meite-shop-basics-springcloud-zuul—统一请求入口 80<br> 
+---------meite-shop-basics-xuxueli-xxljob—分布式任务调度平台<br> 
+---------meite-shop-basics-codingapi-lcn—分布式事务解决框架<br> 
+---------meite-shop-basics-codingapi-zipKin  —分布式调用链系统<br> 
+---------meite-shop-basics-codingapi-elk  —分布式日志收集<br> 
 
+-----meite-shop-service-api提供公共接口<br> 
+------------ meite-shop-service-api-weixin 微信服务接口<br> 
+------------ meite-shop-service-api-member会员服务接口<br> 
+------------ meite-shop-service-api-sso  sso服务接口<br> 
+------------ meite-shop-service-api-item商品服务接口<br> 
+------------ meite-shop-service-api-search 搜索服务接口<br> 
+------------ meite-shop-service-api-pay聚合支付平台<br> 
+------------ meite-shop-service-api-order订单服务接口<br> 
+------------ meite-shop-service-api-spike 秒杀服务接口<br> 
+
+服务接口中包含内存内容: 实体类层、接口层 <br> 
+-----meite-shop-service-impl公共接口的实现<br> 
+------------ meite-shop-service-weixin 微信服务接口实现<br> 
+------------ meite-shop-service-member会员服务接口实现<br> 
+------------ meite-shop-service-api-sso  sso服务接口实现<br> 
+------------ meite-shop-service-tem商品服务接口实现<br> 
+------------ meite-shop-service-search 搜索服务接口实现<br> 
+------------ meite-shop-service-pay聚合支付平台接口实现<br> 
+------------ meite-shop-service-order订单服务接口实现<br> 
+------------ meite-shop-service-api-spike 秒杀服务接口<br> 
+
+-----meite-shop-common 工具类<br> 
+---------meite-shop-common-core—核心工具类<br> 
+
+-----meite-shop-portal 门户平台<br> 
+--------meite-shop-portal-web 门户网站 <br> 
+--------meite-shop-portal-sso 单点登陆系统 <br> 
+--------meite-shop-portal-search 搜索系统<br> 
+--------meite-shop-portal-spike 秒杀系统<br> 
+--------meite-shop-portal-cms 运营系统 <br> 
+
+-----meite-shop-api-entitys-api 开放接口实体类层<br> 
+------------ meite-shop-service-api-weixin-api 微信服务接口<br> 
+------------ meite-shop-service-api-member-api 会员服务接口<br> 
+------------ meite-shop-service-api-sso-api  sso服务接口<br> 
+------------ meite-shop-service-api-item-api 商品服务接口<br> 
+------------ meite-shop-service-api-search-api 搜索服务接口<br> 
+------------ meite-shop-service-api-pay-api 聚合支付平台<br> 
+------------ meite-shop-service-api-order-api 订单服务接口<br> 
+------------ meite-shop-service-api-spike-api  秒杀服务接口<br> 
+
+-----meite-shop-service-job 分布式定时任务调度<br> 
+--------meite-shop-service-weixin-job 微信服务接口实现J
+--------meite-shop-service-member-job 会员服务接口实现<br> 
+--------meite-shop-service-api-sso-job  sso服务接口实现<br> 
+--------meite-shop-service-tem-job 商品服务接口实现<br> 
+--------meite-shop-service-search-job 搜索服务接口实现<br> 
+--------meite-shop-service-pay-job 聚合支付平台接口实现<br> 
+--------meite-shop-service-order-job 订单服务接口实现<br> 
+--------meite-shop-service-api-spike-job 秒杀服务接口<br> 
 # 环境要求
 该项目因为是一套比较真实微服务电商项目，项目在启动的时候会设计到很多分布式基础设施服务，所以本地开发者学习开发
