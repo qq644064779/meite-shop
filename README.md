@@ -146,8 +146,8 @@
 # 项目启动说明
 ## 分布式基础设施环境搭建
 ### 分布式阿波罗配环境搭建
- 使用阿波罗统一管理微服务配置文件，每个服务对应阿波罗一个appid，阿波罗中的appid和微服务项目的spring.application.name保持一致。<br> 
- 阿波罗环境搭建搭建
+ 使用阿波罗统一管理微服务配置文件，每个服务对应阿波罗一个appid，阿波罗中的appid和微服务项目的spring.application.name保持一致<br>
+#### 阿波罗环境搭建搭建
  ```
 1.下载aploll配置中心 https://github.com/nobodyiam/apollo-build-scripts 
 2.上传apollo-build-scripts-master文件到服务器中
@@ -157,4 +157,13 @@
 6.修改demo.sh中的数据库账号和密码
 7.启动阿波罗 ./demo.sh start 
  ```
-
+ #### 修改阿波罗客户端application.properties与自己搭建的保持一致
+ ```
+### 阿波罗平台appid 
+app.id=app-mayikt-weixin
+### 阿波罗平台地址
+apollo.meta=http://192.168.212.240:8080
+### 开启读取多个namespaces
+apollo.bootstrap.enabled = true
+apollo.bootstrap.namespaces = application,mayikt.weixin
+ ```
