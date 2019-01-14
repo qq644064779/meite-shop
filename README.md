@@ -57,7 +57,6 @@ meite-shop-parent-----公共Pranet接口<br>
 ----------meite-shop-service-api-order订单服务接口<br> 
 ----------meite-shop-service-api-spike 秒杀服务接口<br> 
 
-服务接口中包含内存内容: 实体类层、接口层 <br> 
 -----meite-shop-service-impl公共接口的实现<br> 
 ----------meite-shop-service-weixin 微信服务接口实现<br> 
 ----------meite-shop-service-member会员服务接口实现<br> 
