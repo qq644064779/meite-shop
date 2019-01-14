@@ -177,7 +177,7 @@ apollo.bootstrap.namespaces = application,mayikt.weixin
 # 学员练习常见问题
 
 ## 1.下载微服务电商项目依赖SpringCloudJar包，Jar包明明真实存在，却启动报错找不到该类
-解决办法：清空Maven仓库，重新下载Jar包即可。<br> 
+解决办法：首先MavenUpdate，如果还不行，就开始清空Maven仓库，重新下载Jar包即可。<br> 
 
 ## 2.将本地Jar包打包到Maven私服仓库中，无法上传本地Jar包。
 解决办法：maven工程的version版本必须是 RELEASE版本<br> 
