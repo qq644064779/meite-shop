@@ -167,3 +167,5 @@ apollo.meta=http://192.168.212.240:8080
 apollo.bootstrap.enabled = true
 apollo.bootstrap.namespaces = application,mayikt.weixin
  ```
+  #### 可以在C:\opt\data\appid名称查看阿波罗本地文件缓存
+ 
