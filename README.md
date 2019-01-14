@@ -40,7 +40,7 @@
 
 
 # 项目构建
-##### A. 分布式基础设施项目
+#### A. 分布式基础设施项目
 --meite-shop-parent-----公共Pranet接口<br> 
  ---meite-shop-basics----分布式基础设施<br> 
  -----meite-shop-basics-springcloud-eureka—注册中心<br> 
@@ -50,7 +50,7 @@
  -----meite-shop-basics-codingapi-lcn—分布式事务解决框架<br> 
  -----meite-shop-basics-codingapi-zipKin  —分布式调用链系统<br> 
  -----meite-shop-basics-codingapi-elk  —分布式日志收集<br> 
-##### B. 公共服务接口层
+#### B. 公共服务接口层
 ---meite-shop-service-api提供公共接口<br> 
 -----meite-shop-service-api-weixin 微信服务接口<br> 
 -----meite-shop-service-api-member会员服务接口<br> 
@@ -61,7 +61,7 @@
 -----meite-shop-service-api-order订单服务接口<br> 
 -----meite-shop-service-api-spike 秒杀服务接口<br> 
 
-##### C. 公共服务接口实现层
+#### C. 公共服务接口实现层
 ---meite-shop-service-impl公共接口的实现<br> 
 -----meite-shop-service-weixin 微信服务接口实现<br> 
 -----meite-shop-service-member会员服务接口实现<br> 
@@ -72,7 +72,7 @@
 -----meite-shop-service-order订单服务接口实现<br> 
 -----meite-shop-service-api-spike 秒杀服务接口<br> 
 
-##### D. 公共服务接口实体类
+#### D. 公共服务接口实体类
 ---meite-shop-api-entitys-api 开放接口实体类层<br> 
 -----meite-shop-service-api-weixin-api 微信实体类<br> 
 -----meite-shop-service-api-member-api 会员实体类<br> 
@@ -82,7 +82,7 @@
 -----meite-shop-service-api-pay-api 聚合支付实体类<br> 
 -----meite-shop-service-api-order-api 订单实体类<br> 
 -----meite-shop-service-api-spike-api  秒杀实体类<br> 
-##### E. 门户平台
+#### E. 门户平台
 ---meite-shop-portal 门户平台<br> 
 -----meite-shop-portal-web 门户网站 <br> 
 -----meite-shop-portal-sso 单点登陆系统 <br> 
@@ -90,12 +90,12 @@
 -----meite-shop-portal-spike 秒杀系统<br> 
 -----meite-shop-portal-cms 运营系统 <br> 
 
-##### F. 工具类
+#### F. 工具类
 
 ---meite-shop-common 工具类<br> 
 -----meite-shop-common-core—核心工具类<br> 
 -----meite-shop-common-security-安全<br> 
-##### G. 分布式任务调度实现
+#### G. 分布式任务调度实现
 
 ---meite-shop-service-job 分布式定时任务调度<br> 
 -----meite-shop-service-weixin-job 微信定时任务<br>
