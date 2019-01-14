@@ -168,4 +168,6 @@ apollo.bootstrap.enabled = true
 apollo.bootstrap.namespaces = application,mayikt.weixin
  ```
   #### 可以在C:\opt\data\appid名称查看阿波罗本地文件缓存
+### 分布式事务框架LCN
+### 分布式日志收集ELK
  
