@@ -105,4 +105,10 @@
 -----meite-shop-service-order-job 订单定时任务<br> 
 -----meite-shop-service-api-spike-job 秒杀定时任务<br> 
 
-
+# 环境要求
+为了能够更好的学习互联网微服务架构，该项目对环境要求非常高，建议电脑配置CPU在I5、32GB内存或者电脑采用集群化部署。
+1.JDK统一要求:JDK1.8K 
+2.Maven 统一管理Jar
+3.统一采用Docker安装软件
+4.编码统一采用为UTF-8
+5.开发工具IDE或者Eclipse
