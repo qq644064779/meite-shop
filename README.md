@@ -3,8 +3,9 @@
 该项目“基于SpringCloud2.x构建微服务电商项目”由每特教育|蚂蚁课堂版权所有，未经过允许的情况下，私自分享视频和源码属于违法行为。<br> 
 该项目作者:97后互联网架构师-余胜军 <br> 
 视频网址:http://www.mayikt.com/front/couinfo/179/0 <br> 
+联系方式:微信yushengjun644、QQ644064779<br>
 # 项目说明
-联系方式:微信yushengjun644、QQ644064779<br> 该想项目是采用目前比较流行的SpringBoot/SpringCloud构建微服务电商项目，实现一套串联的微服务电商项目，能完全掌握该知识，可以在一线城市拿到月薪25+k薪资。<br> 
+该想项目是采用目前比较流行的SpringBoot/SpringCloud构建微服务电商项目，实现一套串联的微服务电商项目，能完全掌握该知识，可以在一线城市拿到月薪25+k薪资。<br> 
 完全符合一线城市微服务电商的需求，对中国程序猿学习微服务电商架构，有非常大的帮助，该项目涵盖从微服务电商需求讨论、数据库设计、技术选型、互联网安全架构、整合SpringCloud各自组件、分布式基础设施、使Docker+k8s+jenkins实现微服务自动化部署、项目上线域名配置、SEO优化、大数据统计分析等。<br> 
 注意：该项目会在2019年4月份左右上线GitHub和码云等开源网站平台。
 # 技术选型
@@ -41,14 +42,14 @@
 # 项目构建
 
 meite-shop-parent-----公共Pranet接口<br> 
------meite-shop-basics----分布式基础设施<br> 
----------meite-shop-basics-springcloud-eureka—注册中心 8080<br> 
----------meite-shop-basics-apollo-config-server—阿波罗分布式配置中心<br> 
----------meite-shop-basics-springcloud-zuul—统一请求入口 80<br> 
----------meite-shop-basics-xuxueli-xxljob—分布式任务调度平台<br> 
----------meite-shop-basics-codingapi-lcn—分布式事务解决框架<br> 
----------meite-shop-basics-codingapi-zipKin  —分布式调用链系统<br> 
----------meite-shop-basics-codingapi-elk  —分布式日志收集<br> 
+  meite-shop-basics----分布式基础设施<br> 
+     meite-shop-basics-springcloud-eureka—注册中心<br> 
+     meite-shop-basics-apollo-config-server—阿波罗分布式配置中心<br> 
+     meite-shop-basics-springcloud-zuul—统一请求入口<br> 
+     meite-shop-basics-xuxueli-xxljob—分布式任务调度平台<br> 
+     meite-shop-basics-codingapi-lcn—分布式事务解决框架<br> 
+     meite-shop-basics-codingapi-zipKin  —分布式调用链系统<br> 
+     meite-shop-basics-codingapi-elk  —分布式日志收集<br> 
 
 -----meite-shop-service-api提供公共接口<br> 
 ----------meite-shop-service-api-weixin 微信服务接口<br> 
