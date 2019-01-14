@@ -70,5 +70,16 @@
 -----meite-shop-service-search 搜索服务接口实现<br> 
 -----meite-shop-service-pay聚合支付平台接口实现<br> 
 -----meite-shop-service-order订单服务接口实现<br> 
------meite-shop-service-api-spike 秒杀服务接口<br> 
+-----meite-shop-service-api-spike 秒杀服务接口<br> 、
+
+### C. 公共服务接口实体类
+---meite-shop-api-entitys-api 开放接口实体类层<br> 
+-----meite-shop-service-api-weixin-api 微信实体类<br> 
+-----meite-shop-service-api-member-api 会员实体类<br> 
+-----meite-shop-service-api-sso-api  sso实体类<br> 
+-----meite-shop-service-api-item-api 商品实体类<br> 
+-----meite-shop-service-api-search-api 搜索实体类<br> 
+-----meite-shop-service-api-pay-api 聚合支付实体类<br> 
+-----meite-shop-service-api-order-api 订单实体类<br> 
+-----meite-shop-service-api-spike-api  秒杀实体类<br> 
 
