@@ -51,12 +51,12 @@
  -----meite-shop-basics-codingapi-zipKin  —分布式调用链系统<br> 
  -----meite-shop-basics-codingapi-elk  —分布式日志收集<br> 
 ### A. 公共服务接口层
---meite-shop-service-api提供公共接口<br> 
----meite-shop-service-api-weixin 微信服务接口<br> 
----meite-shop-service-api-member会员服务接口<br> 
----meite-shop-service-api-sso  sso服务接口<br> 
----meite-shop-service-api-item商品服务接口<br> 
----meite-shop-service-api-search 搜索服务接口<br> 
----meite-shop-service-api-pay聚合支付平台<br> 
----meite-shop-service-api-order订单服务接口<br> 
----meite-shop-service-api-spike 秒杀服务接口<br> 
+---meite-shop-service-api提供公共接口<br> 
+-----meite-shop-service-api-weixin 微信服务接口<br> 
+-----meite-shop-service-api-member会员服务接口<br> 
+-----meite-shop-service-api-sso  sso服务接口<br> 
+-----meite-shop-service-api-item商品服务接口<br> 
+-----meite-shop-service-api-search 搜索服务接口<br> 
+-----meite-shop-service-api-pay聚合支付平台<br> 
+-----meite-shop-service-api-order订单服务接口<br> 
+-----meite-shop-service-api-spike 秒杀服务接口<br> 
