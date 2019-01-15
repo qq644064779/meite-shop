@@ -105,6 +105,10 @@
 -----meite-shop-service-search-job 搜索定时任务<br> 
 -----meite-shop-service-order-job 订单定时任务<br> 
 -----meite-shop-service-api-spike-job 秒杀定时任务<br> 
+# 数据库构建
+## 会员数据库
+
+
 
 # 环境要求
 为了能够更好的学习互联网微服务架构，该项目对环境要求非常高，建议电脑配置CPU在I5、32GB内存或者电脑采用集群化部署。<br> 
