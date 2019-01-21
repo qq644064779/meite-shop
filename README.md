@@ -42,7 +42,7 @@
 
 # 项目构建
 #### A. 分布式基础设施项目
---meite-shop-parent-----公共Pranet接口<br> 
+--meite-shop-parent-----公共Pranet依赖<br> 
  ---meite-shop-basics----分布式基础设施<br> 
  -----meite-shop-basics-springcloud-eureka—注册中心<br> 
  -----meite-shop-basics-apollo-config-server—阿波罗分布式配置中心<br> 
