@@ -74,15 +74,15 @@
 -----meite-shop-service-api-spike 秒杀服务接口<br> 
 
 #### D. 公共服务接口实体类
----meite-shop-api-entitys-api 开放接口实体类层<br> 
------meite-shop-service-api-weixin-entity 微信实体类<br> 
------meite-shop-service-api-member-entity 会员实体类<br> 
------meite-shop-service-api-sso-entity  sso实体类<br> 
------meite-shop-service-api-item-entity 商品实体类<br> 
------meite-shop-service-api-search-entity 搜索实体类<br> 
------meite-shop-service-api-pay-entity 聚合支付实体类<br> 
------meite-shop-service-api-order-entity 订单实体类<br> 
------meite-shop-service-api-spike-entity  秒杀实体类<br> 
+---meite-shop-api-dto 开放接口实体类层<br> 
+-----meite-shop-service-api-weixin-dto 微信实体类<br> 
+-----meite-shop-service-api-member-dtodtodtodto  会员实体类<br> 
+-----meite-shop-service-api-sso-dtodtodto   sso实体类<br> 
+-----meite-shop-service-api-item-dtodto  商品实体类<br> 
+-----meite-shop-service-api-search-dto 搜索实体类<br> 
+-----meite-shop-service-api-pay-dto 聚合支付实体类<br> 
+-----meite-shop-service-api-order-dto 订单实体类<br> 
+-----meite-shop-service-api-spike-dto秒杀实体类<br> 
 #### E. 门户平台
 ---meite-shop-portal 门户平台<br> 
 -----meite-shop-portal-web 门户网站 <br> 
