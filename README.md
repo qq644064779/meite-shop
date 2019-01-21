@@ -76,9 +76,9 @@
 #### D. 公共服务接口实体类
 ---meite-shop-api-dto 开放接口实体类层<br> 
 -----meite-shop-service-api-weixin-dto 微信实体类<br> 
------meite-shop-service-api-member-dtodtodtodto  会员实体类<br> 
------meite-shop-service-api-sso-dtodtodto   sso实体类<br> 
------meite-shop-service-api-item-dtodto  商品实体类<br> 
+-----meite-shop-service-api-member-dto  会员实体类<br> 
+-----meite-shop-service-api-sso-dto  sso实体类<br> 
+-----meite-shop-service-api-item-dto  商品实体类<br> 
 -----meite-shop-service-api-search-dto 搜索实体类<br> 
 -----meite-shop-service-api-pay-dto 聚合支付实体类<br> 
 -----meite-shop-service-api-order-dto 订单实体类<br> 
