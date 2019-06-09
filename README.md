@@ -187,8 +187,27 @@ apollo.bootstrap.namespaces = application,mayikt.weixin
  2.2前端实现：采用定时器形式，使用Token调用验证接口是否已经过期。<br>
 3.联合登陆实现：<br>
  调用腾讯/微信开放平台，使用OAuth2.0授权获取用户相关openid，使用openid关联会员服务账号信息<br>
-4.SSO登陆实现:
+4.SSO登陆实现:<br>
  使用XXL-SSO框架实现微服务平台单点登陆开发<br>
+## 每特微服务电商平台-商品搜索服务
+### 责任描述
+1.	负责整个商品数据库的设计  <br>
+2.	负责商品搜索服务接口的开发<br>
+3.	负责实现Elasticsearch与MySQL数据库同步问题<br>
+4.	负责商品详情页面静态化开发<br>
+### 技术描述
+ 1.商品数据库设计: <br>
+分类表采用无限级分类策略，采用SPU(产品单元)、SKU(库存量单元)具体商品规格。<br>
+  2.商品搜索服务接口:<br>
+ 为了提高用户的搜索效率，采用Elasticsearch存放商品信息数据，集成IK分词+PingYin插件，实现拼音和中文分词高效查询。<br>
+  3.MySQL与ES数据同步:<br>
+    3.1采用MQ实时性和Logstash定时实现MySQL与ES同步<br>
+    3.2MQ同步方案:发布/修改/删除/商品的时候，以MQ异步形式同步到Elasticsearch中，可以实时保证双方数据一致性问题。<br>
+    3.3Logstash同步方案:使用Logstash定时方式读取数据库最新的数据>=update_time时间 ，让后在格式化成json格式输出到<br>
+Elasticsearch中。
+  4.商品详情页面静态化:<br>
+  5.使用Nginx+ FreeMarker实现页面的静态化、Nginx+Lua+OpenResty<br>
+
 
 
 
