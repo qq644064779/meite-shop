@@ -20,7 +20,7 @@
 ## B. 分布式基础设施环境构建
 1.分布式任务调度平台XXL-Job<br> 
 2.分布式日志采集系统ELK +kafka<br> 
-3.分布式事务解决方案LCN <br> 
+3.分布式事务解决方案Rabitmq <br> 
 4.分布式锁解决方案Zookeeper、Redis<br> 
 5.分布式配置中心携程阿波罗 <br> 
 6.高并发分布式全局ID生成雪花算法<br> 
@@ -170,6 +170,9 @@ apollo.bootstrap.enabled = true
 apollo.bootstrap.namespaces = application,mayikt.weixin
  ```
   #### 可以在C:\opt\data\appid名称查看阿波罗本地文件缓存
+
+# 项目核心技术点说明:
+## 每特微服务电商平台-会员服务/SSO服务
 
 
 # 学员练习常见问题
