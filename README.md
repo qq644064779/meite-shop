@@ -2,12 +2,12 @@
 # 版权说明:
 该项目“基于SpringCloud2.x构建微服务电商项目”由每特教育|蚂蚁课堂版权所有，未经过允许的情况下，私自分享视频和源码属于违法行为。<br> 
 该项目作者:97后互联网架构师-余胜军 <br> 
-视频网址:http://www.mayikt.com/front/couinfo/179/0 <br> 
-联系方式:微信yushengjun644、QQ644064779<br>
+视频网址:http://www.mayikt.com/front/couinfo/189/0 <br> 
+联系方式:微信yushengjun644、QQ644064779、644064065<br>
 # 项目说明
 该想项目是采用目前比较流行的SpringBoot/SpringCloud构建微服务电商项目，实现一套串联的微服务电商项目，能完全掌握该知识，可以在一线城市拿到月薪25+k薪资。<br> 
 完全符合一线城市微服务电商的需求，对中国程序猿学习微服务电商架构，有非常大的帮助，该项目涵盖从微服务电商需求讨论、数据库设计、技术选型、互联网安全架构、整合SpringCloud各自组件、分布式基础设施、使Docker+k8s+jenkins实现微服务自动化部署、项目上线域名配置、SEO优化、大数据统计分析等。<br> 
-注意：该项目会在2019年4月份左右上线GitHub和码云等开源网站平台。
+
 # 技术选型
 
 ## A. 项目采用SpringBoot2.x+SpringCloud2.x构建微服务电商项目
@@ -105,9 +105,6 @@
 -----meite-shop-service-search-job 搜索定时任务<br> 
 -----meite-shop-service-order-job 订单定时任务<br> 
 -----meite-shop-service-api-spike-job 秒杀定时任务<br> 
-# 数据库构建
-## 会员数据库
-
 
 
 # 环境要求
@@ -119,10 +116,10 @@
 5.开发工具IDE或者Eclipse<br> 
 
 # 课程安排
-第一节	需求讨论与技术架构选型 (已经完成)<br> 
-第二节	微服务架构环境搭建Maven私服仓库 (已经完成)<br> 
-第三节	微服务架构环境搭建GitLiab代码仓库 (已经完成)<br> 
-第四节 搭建企业级微信公众号平台 (已经完成)<br> 
+第一节	需求讨论与技术架构选型 <br> 
+第二节	微服务架构环境搭建Maven私服仓库 <br> 
+第三节	微服务架构环境搭建GitLiab代码仓库 <br> 
+第四节 搭建企业级微信公众号平台 <br> 
 第五节	构建微服务电商项目与数据库实战设计<br> 
 第六节	分布式基础设施之分布式配置中心环境搭建<br> 
 第七节	微服务电商项目-会员服务-联合登陆<br> 
@@ -173,9 +170,6 @@ apollo.bootstrap.enabled = true
 apollo.bootstrap.namespaces = application,mayikt.weixin
  ```
   #### 可以在C:\opt\data\appid名称查看阿波罗本地文件缓存
-### 分布式事务框架LCN
-### 分布式日志收集ELK
-
 
 
 # 学员练习常见问题
