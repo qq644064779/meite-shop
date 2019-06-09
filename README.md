@@ -145,31 +145,7 @@
 第二十七节	微服务电商项目大数据用户行为分析<br> 
 最终以实际课程表格为准。<br> 
 
-# 项目启动说明
-## 分布式基础设施环境搭建
-### 分布式阿波罗配环境搭建
- 使用阿波罗统一管理微服务配置文件，每个服务对应阿波罗一个appid，阿波罗中的appid和微服务项目的spring.application.name保持一致<br>
-#### 阿波罗环境搭建搭建
- ```
-1.下载aploll配置中心 https://github.com/nobodyiam/apollo-build-scripts 
-2.上传apollo-build-scripts-master文件到服务器中
-3.创建阿波罗需要的数据库apolloConfigDb和apolloPortalDb
-4.unzip apollo-build-scripts-master.zip 解压配置文件
-5.如果没有unzip命令的话，安装zip插件 yum -y install zip unzip
-6.修改demo.sh中的数据库账号和密码
-7.启动阿波罗 ./demo.sh start 
- ```
- #### 修改阿波罗客户端application.properties与自己搭建的保持一致
- ```
-### 阿波罗平台appid 
-app.id=app-mayikt-weixin
-### 阿波罗平台地址
-apollo.meta=http://192.168.212.240:8080
-### 开启读取多个namespaces
-apollo.bootstrap.enabled = true
-apollo.bootstrap.namespaces = application,mayikt.weixin
- ```
-  #### 可以在C:\opt\data\appid名称查看阿波罗本地文件缓存
+
 
 # 项目核心技术点说明:
 ## 每特微服务电商平台-会员服务/SSO服务
@@ -207,6 +183,66 @@ apollo.bootstrap.namespaces = application,mayikt.weixin
 Elasticsearch中。
   4.商品详情页面静态化:<br>
   5.使用Nginx+ FreeMarker实现页面的静态化、Nginx+Lua+OpenResty<br>
+## 每特微服务电商平台-聚合支付平台
+### 责任描述
+1.	与第三方支付接口平台技术人员对接<br>
+2.	聚合支付平台数据库表结构设计<br>
+3.	基于设计模式构建聚合支付平台<br>
+4.	基于MQ实现分布式事务解决方案<br>
+5.	使用xxl-job实现聚合支付对账<br>
+6.	常用遇到支付难题问题解决 <br>
+
+### 技术描述
+1.与第三方支付接口平台技术人员对接<br>
+ 负责支付宝、微信支付、银联支付等支付接口技术人员沟通对接<br>
+2.聚合支付平台数据库表结构设计<br>
+ 负责聚合支付平台数据库表结构设计，payment_channel渠道表、payment_transaction流水表、payment_transaction_log日志表等实现完全可视化界面支付开关控制支付渠道。<br>
+3.基于设计模式构建聚合支付平台<br>
+使用策略+工厂设计模式实现支付接口提交html表单元素重构、使用模版方法+工厂设计模式实现共同异步回调代码重构，采用多线程+MQ实现支付回调日志收集<br>
+4.使用xxl-job实现聚合支付对账<br>
+使用分布式任务调度平台XXL-JOB实现支付接口产生延迟导致订单状态不同步实现自动化补偿，每天晚上两点钟时间定时触发任务，商户端主动使用支付id调用第三方支付渠道接口查询支付状态是否已经支付过，如果第三方支付渠道接口已经支付过，同步商户端订单状态。 <br>
+ 5.基于MQ实现分布式事务解决方案<br>
+在微服务系统中，支付服务调用积分服务接口增加对应积分，该场景存在分布式事务问题，我们采用rabbitMQ实现+补单形式保证最终一致性实现双方数据同步<br>
+6.常用遇到支付难题问题解决 
+问题1：支付回调接口中，产生延迟通知？导致支付状态不一致问题 <br>
+ 解决方案：商户端使用任务调度平台主动调用第三方接口查询，实现数据同步<br>
+问题2：重试支付回调接口时，如何保证回调接口通知幂等性问题<br>
+ 解决方案：因为第三方支付接口采用间隔性重试机制，使用支付全局id查询支付状态已经支付，及时响应成功状态通知给第三方支付平台不在继续重试。<br>
+问题3：支付金额与商品金额如果不一致时，如何处理<br>
+ 解决方案：在支付回调中查询待支付表记录金额与实际回调金额是否一致，如果不一致该笔订单纳为异常订单<br>
+问题4：第三方支付平台如何与对接系统保证分布式事务问题<br>
+ 解决方案：使用重试+补偿+日志记录形式保证最终一致性实现数据的统一<br>
+问题5：支付服务如何与其他系统保证分布式事务问题<br>
+  解决方案：MQ/TCC/LCN分布式事务解决框架解决分布式事务问题<br>
+
+
+
+# 项目启动说明
+## 分布式基础设施环境搭建
+### 分布式阿波罗配环境搭建
+ 使用阿波罗统一管理微服务配置文件，每个服务对应阿波罗一个appid，阿波罗中的appid和微服务项目的spring.application.name保持一致<br>
+#### 阿波罗环境搭建搭建
+ ```
+1.下载aploll配置中心 https://github.com/nobodyiam/apollo-build-scripts 
+2.上传apollo-build-scripts-master文件到服务器中
+3.创建阿波罗需要的数据库apolloConfigDb和apolloPortalDb
+4.unzip apollo-build-scripts-master.zip 解压配置文件
+5.如果没有unzip命令的话，安装zip插件 yum -y install zip unzip
+6.修改demo.sh中的数据库账号和密码
+7.启动阿波罗 ./demo.sh start 
+ ```
+ #### 修改阿波罗客户端application.properties与自己搭建的保持一致
+ ```
+### 阿波罗平台appid 
+app.id=app-mayikt-weixin
+### 阿波罗平台地址
+apollo.meta=http://192.168.212.240:8080
+### 开启读取多个namespaces
+apollo.bootstrap.enabled = true
+apollo.bootstrap.namespaces = application,mayikt.weixin
+ ```
+  #### 可以在C:\opt\data\appid名称查看阿波罗本地文件缓存
+
 
 
 
